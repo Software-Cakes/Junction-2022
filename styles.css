@@ -1,0 +1,246 @@
+body {
+    background-color: #FBF0E4;
+}
+
+.nav-wrapper {
+    font-family: 'Montserrat';
+    font-style: normal;
+    display: flex;
+    font-weight: 700;
+    justify-content: space-between;
+}
+
+.left-side {
+    display: flex;
+    padding: 19px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.brand {
+    padding: 11px;
+}
+
+.right-side {
+    padding: 30px;
+    display: flex;
+}
+
+.nav-wrapper > .right-side > div {
+    margin-right: 20px;
+    font-size: 1em;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 0px;
+    font-size: 1em;
+}
+
+.services, .FAQ, .join, .login {
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.left-side a{
+    color: #F6872D;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.services a, .FAQ a, .join a, .login a {
+    color: #8C3F0D;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.brand:hover{ 
+    color: #C4661F;
+    border-bottom: 3px solid #C4661F;
+}
+
+.services:hover{
+    color: #C4661F;
+    border-bottom: 3px solid #C4661F;
+}
+
+.FAQ:hover {
+    color: #C4661F;
+    border-bottom: 3px solid #C4661F;
+}
+
+.join:hover {
+    color: #C4661F;
+    border-bottom: 3px solid #C4661F;
+}
+
+.login:hover{
+    color: #C4661F;
+    border-bottom: 3px solid #C4661F;
+}
+
+.services, .FAQ, .join {
+    position: relative;
+}
+
+.services ul, .FAQ ul, .join ul{
+    position: absolute;
+    color: white;
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin-left: -110px;
+    align-items:initial;
+    flex-direction: column;
+    list-style: none;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition: all 0.5s ease;
+}
+
+.services a, .FAQ a, .join a {
+    text-decoration: none;
+}
+
+.services li, .FAQ li, .join li{
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.services li:hover, .FAQ li:hover, .join li:hover{
+    background-color: #C4661F;
+}
+
+.right-side a, .login {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.right-side a:hover, .login:hover {
+    color: #C4661F;
+}
+
+.services a:focus + ul , .FAQ a:focus + ul, .join a:focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+}
+
+.content1 {
+    position: absolute;
+    height: 15px;
+    left: 80px;
+    top: 180px;
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 88px;
+    display: flex;
+    align-items: center;
+    color: #C4661F;
+}
+
+.content2 {
+    position: absolute;
+    height: 15px;
+    left: 80px;
+    top: 240px;
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 88px;
+    display: flex;
+    align-items: center;
+    color: #C4661F;
+}
+
+.content3 {
+    position: absolute;
+    height: 10px;
+    left: 80px;
+    top: 265px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 15px;
+    align-items: center;
+    color: #572C14;
+}
+
+h1 {
+    text-align: center;
+}
+
+.formbox {
+    position: absolute;
+    width: 520px;
+    height: 380px;
+    left: 490px;
+    top: 170px;
+    background-color: #FFF9F3;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 38px;
+    color: #C4661F;
+}
+
+.subbox {
+    box-sizing: border-box;
+    width: 80%;
+    height: 46.02px;
+    left: 600px;
+    top: 290px;
+    border-color: 2px solid #F6872D;
+    border-radius: 36px;
+}
+
+.subbox input {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 15px;
+    line-height: 18px;
+    align-items: center;
+    color: #F6872D;
+    padding-left: 100px;
+}
+
+.content333 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    color: #8C3F0D;
+    padding: 60px;
+}
+
+.subbox2 {
+    position: absolute;
+    width: 380px;
+    height: 41.41px;
+    left: 60px;
+    top: 320px;
+    background-color: #F6872D;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 36px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 15px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    color: #FFF9F3;
+}
